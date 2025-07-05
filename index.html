@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="outsideContainer">
+        <div id="restartDiv">
+            <i id="gameStatusIcon" class="fa fa-smile-o"></i>
+        </div>
+        <div id="data">
+            <div id="bombs">
+                <span class="text">BombsLeft: </span>
+                <span class="mainText" id="bombsLeft">15</span>
+            </div>
+            <div id="bombsAndFlagToggler">
+                <div id="flagToggler">
+                    <div class="flag"></div>
+                </div>
+                <div id="bombToggler">
+                    <i class="fa fa-bomb bomb" style="font-size: 18px;"></i>
+                </div>
+            </div>
+            <!-- <div id="time">
+                <span class="text">CurrentTime: </span>
+                <span class="mainText" id="bombsLeft">00:00</span>
+            </div> -->
+        </div>
+        <div id="container"></div>
+    </div>
+
+    <div id="losingDiv">
+        <div id="wins">
+            <div id="amount">
+                <span class="text">You've won </span>
+                <span class="mainText" id="bombsLeft">15</span>
+                <span class="text"> times.</span>
+            </div>
+            <div id="streak">
+                <span class="text">You're on a </span>
+                <span class="mainText" id="bombsLeft">15</span>
+                <span class="text"> win streak.</span>
+            </div>
+            <button id="playAgainButton">Start a new</button>
+        </div>
+    </div>
+
+<script src="Cell.js"></script>
+<script src="sketch.js"></script>
+</body>
+</html>
